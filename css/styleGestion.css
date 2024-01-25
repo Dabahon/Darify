@@ -94,9 +94,11 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: end;
-
 }
-
+.contenedor-info h2 {
+    font-size: 16px;
+    text-align: center;
+}
 .contenedor-usuario {
     width: 200px;
     height: 220px;
