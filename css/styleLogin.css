@@ -1,0 +1,140 @@
+:root {
+    --color-primario: #FFFFFF;
+    --color-secundario: #7E56D9;
+    --color-body: #E1E1E5;
+    --color-contenedor: #F3F4F8;
+}
+/* 
+    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-body);
+}
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor {
+    height: 500px;
+    width: 700px;
+    background-color: var(--color-contenedor);
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+.seccion1 {
+    height: 100%;
+    width: 50%;
+    background-color: var(--color-primario);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    padding-left: 5px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+.datos {
+    height: 100%;
+    padding-left: 60px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.datos h1 {
+    font-size: 22px;
+}
+.datos h2 {
+    font-family: 'Lora', serif;
+    color: #6E6D75;
+    font-size: 13px;
+}
+.datos p {
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.datos form {
+    padding-top: 10px;
+    width: 100%;
+}
+.datos input {
+    width: 220px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: var(--color-contenedor);
+    border: 1px solid #D9D9D9;
+    padding-left: 5px;
+}
+.acceder {
+    padding-top: 20px;
+}
+.acceder input {
+    width: 227px;
+    height: 30px;
+    color: #FFFFFF;
+    font-size: 12px;
+    background-color: var(--color-secundario);
+    border: 1px solid #D9D9D9;
+}
+.datos h3 {
+    font-family: 'Lora', serif;
+    color: #6E6D75;
+    font-size: 12px;
+}
+.datos a {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+.seccion2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion2 img {
+    width: 350px;
+    height: 350px;
+}
+/* ------------- Hover --------- */
+.datos form input:hover {
+    scale: 1.1;
+}
+
+/* -----------Responsitive -------------*/
+@media (max-width: 480px){
+    .contenedor {
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        text-align: center;
+    }
+    .seccion1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .datos {
+        padding-bottom: 30px;
+        padding-left: 0px;
+    }
+}
