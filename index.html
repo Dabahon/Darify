@@ -3,89 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleIndex.css">
-    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Login</title>
 </head>
 <body>
-    <div class="contenedor">
-        <header>
-            <div>
+    <main>
+        <div class="contenedor">
+            <div class="seccion1">
                 <div class="logo">
-                    <img src="img/logo.png" alt="logo">
+                    <img src="img/logo.png" alt="Logo">
                     <h1>Darify</h1>
                 </div>
-                <nav>
-                    <div class="navegacion">
-                        <img class="icono" src="img/casa.png" alt="">
-                        <a id="actual" href="index.html">Home</a>
-                    </div>
-                    <div class="navegacion">
-                        <img class="icono" src="img/usuario.png" alt="">
-                        <a href="perfil.html">Perfil</a>
-                    </div>
-                    <div class="navegacion">
-                        <img class="icono" src="img/calendario.png" alt="">
-                        <a  href="gestion.html">Gestión vacaciones</a>
-                    </div>
-                    <div class="navegacion">
-                        <img class="icono" src="img/chat.png" alt="">
-                        <a href="">Chat</a>
-                    </div>
-                </nav>
-            </div>
-            <div class="usuario">
-                <div class="contenedor-usuario">
-                    <div class="fotoPerfil">
-                    </div>
-                    <div class="contenedor-info">
-                        <h1>Daniel Barroso <br>Honrubia</h1>
-                        <h3>Amazon Logistics <br>L3 Supervisor</h3>
-                    </div>
+                <div class="datos">
+                    <h1>Bienvenido</h1>
+                    <h2>Ingrese sus datos para iniciar sesión</h2>
+                    <form action="home.html" method="get">
+                        <p>Usuario</p>
+                        <input type="text" name="Usuario">
+                        <p>Contraseña</p>
+                        <input type="password" name="Contraseña">
+                        <div class="acceder">
+                            <input type="submit" value="Acceder">
+                        </div>
+                    </form>
+                    <h3>¿No tienes cuenta? <a href="signUp.html">Registrate</a></h3>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="header-main">
-                <div class="caja1">
-                    <h1>Dashboard</h1>
-                </div>
-                <div class="caja2">
-                    <h1>Menu Principal</h1>
-                </div>
+            <div class="seccion2">
+                <img src="img/logo.png" alt="logoPrincipal">
             </div>
-            <div class="contenedor-main">
-                <div class="texto-main">
-                    <h1>Bienvenido/a Darify</h1>
-                    <h3>Descubre una nueva forma de administrar y disfrutar de tus vacaciones con Darify, ¡tu compañero perfecto para días inolvidables!</h3>
-                </div>
-                <div class="cajas-main">
-                    <div class="usuario-main">
-                        <div class="fotoPerfil-main">
-                        </div>
-                        <div class="contenedor-info-main">
-                            <h1>Daniel Barroso Honrubia</h1>
-                            <h3>Amazon Logistics <br>L3 Supervisor</h3>
-                        </div>
-                    </div>
-                    <div class="calendario-main">
-                        <div class="dias">
-                            <h1>Dias <br>Disponibles</h1>
-                            <div class="numeroDias">
-                                <p>14</p>
-                            </div>
-                        </div>
-                        <div class="dias">
-                            <h1>Dias <br>Totales</h1>
-                            <div class="numeroDias">
-                                <p>22</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </main>
-    </div>
+        </div>
+    </main>
+    
 </body>
 </html>
