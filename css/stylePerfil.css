@@ -27,7 +27,7 @@ body {
 }
 .contenedor {
     display: flex;
-    width: 99%;
+    width: 99vw;
     height: 99vh;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
