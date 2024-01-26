@@ -34,7 +34,7 @@ body {
         z-index: 1;
 }
 header {
-    width: 300px;
+    width: 350px;
     border-radius: 20px 0px 0px 20px;
     background-color: var(--color-primario);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
