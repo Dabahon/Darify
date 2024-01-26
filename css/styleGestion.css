@@ -141,7 +141,7 @@ nav a {
 
 main {
     border-radius: 0px 20px 20px 0px;
-    width: 70vw;
+    width: 100%;
     background-color: var(--color-body);
     display: flex;
     flex-direction: column;
